@@ -1,3 +1,15 @@
 @mixin taille_image {
     width: 10em;
 }
+
+@mixin color-place_bg ($colour: $color_footer_bg){
+    background-color: lighten($colour, 50%);
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
