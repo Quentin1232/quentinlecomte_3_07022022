@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <div id="header__logo">
         <img
           src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png"
@@ -42,15 +42,11 @@
       <div id="header__place">
         <i class="fas fa-map-marker-alt"> Paris, Belleville</i>
       </div>
-
       <form id="header__form">
         <h1>Réservez le menu qui vous convient</h1>
-        <p>
-          Découvrez des restaurants d'exception, séléctionnés par nos soins.
-        </p>
-        <button>Explorer nos restaurants</button>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <button id="header__form__button">Explorer nos restaurants</button>
       </form>
-
       <div id="header__tuto">
         <h1>Fonctionnement</h1>
         <ol>
@@ -73,9 +69,15 @@
               <h2>La palette du goût</h2>
               <p>Ménilmontant</p>
             </div>
-            <i class="far fa-heart" class="heart"></i>
-            <i class="fas fa-heart" class="heart"></i>
-          </div>
+            <div class="restaurants__liste__item__description__heart">
+              <div class="restaurants__liste__item__description__heart__heart-normal">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="restaurants__liste__item__description__heart__heart-checked" class="test">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+            </div>
         </div>
         <br />
         <div class="restaurants__liste__item" id="note">
@@ -87,9 +89,11 @@
               <h2>La note enchantée</h2>
               <p>Charonne</p>
             </div>
-            <i class="far fa-heart" class="heart"></i>
-            <i class="fas fa-heart" class="heart"></i>
-          </div>
+            <div class="restaurants__liste__item__description__heart">
+              <i class="far fa-heart" class="restaurants__liste__item__description__heart__heart-normal"></i>
+              <i class="fas fa-heart" class="restaurants__liste__item__description__heart__heart-checked"></i>
+            </div>
+           </div>
         </div>
         <br />
         <div class="restaurants__liste__item" id="francaise">
@@ -101,8 +105,10 @@
               <h2>A la française</h2>
               <p>Cité Rouge</p>
             </div>
-            <i class="far fa-heart" class="heart"></i>
-            <i class="fas fa-heart" class="heart"></i>
+            <div class="restaurants__liste__item__description__heart">
+              <i class="far fa-heart" class="restaurants__liste__item__description__heart__heart-normal"></i>
+              <i class="fas fa-heart" class="restaurants__liste__item__description__heart__heart-checked"></i>
+            </div>
           </div>
         </div>
         <br />
@@ -115,14 +121,16 @@
               <h2>Le délice des sens</h2>
               <p>Folie-Méricourt</p>
             </div>
-            <i class="far fa-heart" class="heart"></i>
-            <i class="fas fa-heart" class="heart"></i>
+            <div class="restaurants__liste__item__description__heart">
+              <i class="far fa-heart" class="restaurants__liste__item__description__heart__heart-normal"></i>
+              <i class="fas fa-heart" class="restaurants__liste__item__description__heart__heart-checked"></i>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <br />
-    <footer>
+    <footer id="footer">
       <img
         id="footer__logo"
         src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png"
