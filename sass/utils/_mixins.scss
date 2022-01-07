@@ -3,7 +3,11 @@
 }
 
 @mixin color-place_bg ($colour: $color_footer_bg){
-    background-color: lighten($colour, 50%);
+    background-color: lighten($colour, 60%);
+}
+
+@mixin color-main_bg ($colour: $color_footer_bg){
+    background-color: lighten($colour, 70%);
 }
 
 @mixin center {
@@ -12,4 +16,17 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+@mixin button{
+    background: linear-gradient($color2, $color1);
+    color: $color_white;
+    padding: 1em;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 5px 5px rgb(177, 177, 177);
+}
+
+@mixin color_new ($colour: $color3){
+    color: darken($colour, 40%);
 }

@@ -1,0 +1,176 @@
+h3 {
+    font-family: Shrikhand;
+    font-size: 2em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+
+#header {
+    width: 100%;
+    &__logo-fleche{
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        padding: 1em 1em;
+        &__fleche{
+            font-size: 2rem;
+            color: unset;
+        }
+        &__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > img {
+                width: 60%;
+            }
+        }
+    }
+    &__image {
+        width: 100%;
+        position: relative;
+        > img {
+            width: 100%;
+            object-fit: cover;
+            height: 20em;
+        }
+    }
+    &__nom-coeur{
+        margin-top: -3em;
+        position: absolute;
+        @include color-main_bg;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1em;
+        width: 92.5%;
+        &__heart {
+            font-size: 2em;
+            &:hover &__heart-checked {
+              // color: $color1;
+              background: linear-gradient($color2, $color1);
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              opacity: 1;
+            }
+            &__heart-normal {
+              position: absolute;
+              &:hover {
+                opacity: 0;
+              }
+            }
+            &__heart-checked {
+              opacity: 0;
+            }
+        
+        }
+    }
+}
+
+.main {
+    @include color-main_bg;
+    padding: 0.5em;
+    &__entree{
+            &__plat{
+            box-shadow: 0 10px 20px rgb(204, 204, 204);
+            overflow: hidden;
+            width: auto;
+            border-radius: 10px;
+            background-color: white;
+            height: 5em;
+            margin-bottom: 1em;
+            padding-left: 00.5em;
+            padding-right: 00.5em;
+            > h6 {
+                font-size: 1.2em;
+                width: auto;
+                margin-block-start: 0.5em;
+                margin-block-end: 0.5em;
+            }
+            &__p {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-block-end: 0em;
+                &__prix{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__plats {
+        &__plat{
+            box-shadow: 0 10px 20px rgb(204, 204, 204);
+            overflow: hidden;
+            width: auto;
+            border-radius: 10px;
+            background-color: white;
+            height: 5em;
+            margin-bottom: 1em;
+            padding-left: 00.5em;
+            padding-right: 00.5em;
+            > h6 {
+                font-size: 1.2em;
+                width: auto;
+                margin-block-start: 0.5em;
+                margin-block-end: 0.5em;
+            }
+            &__p {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-block-end: 0em;
+                &__prix{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__desserts{
+        &__plat{
+            box-shadow: 0 10px 20px rgb(204, 204, 204);
+            overflow: hidden;
+            width: auto;
+            border-radius: 10px;
+            background-color: white;
+            height: 5em;
+            margin-bottom: 1em;
+            padding-left: 00.5em;
+            padding-right: 00.5em;
+            > h6 {
+                font-size: 1.2em;
+                width: auto;
+                margin-block-start: 0.5em;
+                margin-block-end: 0.5em;
+            }
+            &__p {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-block-end: 0em;
+                &__prix{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        > input {
+            @include button;
+        }
+        
+
+    }
+}
+
+.underline {
+    padding-bottom: 0.3em;
+    border-bottom: 5px $color3 solid;
+    margin-bottom: 1em;
+}

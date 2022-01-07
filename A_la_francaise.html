@@ -7,15 +7,12 @@
     ></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="Style.css" />
-
-    <title>OhMyFood</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>A_la_francaise</title>
 
     <!-- <script type="text/javascript">
       console.log('test');
@@ -32,85 +29,94 @@
   </head>
 
   <body>
-    <header>
-      <div id="header__logo_flèche">
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
+    <header id="header">
+      <div id="header__logo-fleche">
+        <a href="index.html" id="header__logo-fleche__fleche">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <div id="header__logo-fleche__logo">
+          <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
+        </div>
       </div>
       <div id="header__image">
         <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="images">
       </div>
-      <div id="header__nom_coeur">
-        <h1>A la française</h1>
-        <i class="far fa-heart"></i>
+      <div id="header__nom-coeur">
+        <h3 id="header__nom-coeur__nom">A la française</h3>
+        <div id="header__nom-coeur__heart">
+          <div
+            id="header__nom-coeur__heart__heart-normal"
+          >
+            <i class="far fa-heart"></i>
+          </div>
+          <div
+            id="header__nom-coeur__heart__heart-checked"
+          >
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
       </div>
-      </header>
-    
-    <main>
-      <div id="main__entree">
-        <h2>ENTREES</h2>
+    </header>
+    <br >
+
+    <main class="main">
+      <div class="main__entree">
+        <h2><b class="underline">ENTR</b>EES</h2>
         <div class="main__entree__plat">
           <h6>Tartare de poulpe acidulé</h6>
-          <p>Aux zests d'orange</p>
-          <p class="main__entree__plat__prix">25€</p>
+          <p class="main__entree__plat__p">Aux zests d'orange<span class="main__entree__plat__p__prix">25€</span></p>
         </div>
         <div class="main__entree__plat">
           <h6>Velouté de légumes d'antan</h6>
-          <p>Carotte, panais, topinambour</p>
-          <p class="main__entree__plat__prix">35€</p>
+          <p class="main__entree__plat__p">Carotte, panais, topinambour<span class="main__entree__plat__p__prix">35€</span></p>
         </div>
         <div class="main__entree__plat">
           <h6>Soupe à l'oignon</h6>
-          <p>Revisitée</p>
-          <p class="main__entree__plat__prix">20€</p>
+          <p class="main__entree__plat__p">Revisitée<span class="main__entree__plat__p__prix">20€</span></p>
         </div>
       </div>
-        <br />
-      <div id="main__plats">
-        <h2>PLATS</h2>
+      <br />
+      <div class="main__plats">
+        <h2><b class="underline">PLAT</b>S</h2>
         <div class="main__plats__plat">
           <h6>Coquilles Saint-Jacques</h6>
-          <p>Accompagnées d'une purée de panais</p>
-          <p class="main__plats__plat__prix">40€</p>
+          <p class="main__plats__plat__p">Accompagnées d'une purée de panais<span class="main__plats__plat__p__prix">40€</span></p>
         </div>
         <div class="main__plats__plat">
           <h6>Magret de canard</h6>
-          <p>Et parmentier de pommes de terres</p>
-          <p class="main__plats__plat__prix">35€</p>
+          <p class="main__plats__plat__p">Et parmentier de pommes de terres<span class="main__plats__plat__p__prix">35€</span></p>
         </div>
         <div class="main__plats__plat">
           <h6>Pigeonneau d'Ille-et-Vilaine</h6>
-          <p>Sur son lit de gnocchis aux légumes</p>
-          <p class="main__plats__plat__prix">44€</p>
+          <p class="main__plats__plat__p">Sur son lit de gnocchis aux légumes<span class="main__plats__plat__p__prix">44€</span></p>
         </div>
       </div>
       <br />  
-      <div id="main__desserts">
-        <h2>DESSERTS</h2>
+      <div class="main__desserts">
+        <h2><b class="underline">DESS</b>ERTS</h2>
         <div class="main__desserts__plat">
           <h6>Pétales de violettes glacés</h6>
-          <p>Et purée de noisettes</p>
-          <p class="main__desserts__plat__prix">18€</p>
+          <p class="main__desserts__plat__p">Et purée de noisettes<span class="main__desserts__plat__p__prix">18€</span></p>
         </div>
         <div class="main__desserts__plat">
           <h6>Fondant au chocolat</h6>
-          <p>Revisité</p>
-          <p class="main__desserts__plat__prix">22€</p>
+          <p class="main__desserts__plat__p">Revisité<span class="main__desserts__plat__p__prix">22€</span></p>
         </div>
         <div class="main__desserts__plat">
           <h6>Millefeuille croustillant</h6>
-          <p>Myrtilles et pâte d'amande</p>
-          <p class="main__desserts__plat__prix">23€</p>
+          <p class="main__desserts__plat__p">Myrtilles et pâte d'amande<span class="main__desserts__plat__p__prix">23€</span></p>
         </div>
       </div>
-      <div id="main__button">
+      <div class="main__button">
         <input type="button" value="Commander"/>
       </div>
     </main>
-    <br />
-    <footer>
-      <div id="footer__logo">
-        <img src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo2">
-      </div>
+    <footer id="footer">
+      <img
+        id="footer__logo"
+        src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png"
+        alt="logo2"
+      />
       <ul id="footer__liste">
         <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
         <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
@@ -119,3 +125,4 @@
       </ul>
     </footer>
   </body>
+</html>

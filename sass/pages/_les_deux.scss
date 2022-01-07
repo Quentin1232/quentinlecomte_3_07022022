@@ -1,0 +1,26 @@
+body {
+  margin: 0em;
+  font-family: Roboto;
+}
+
+#footer {
+    background-color: $color_footer_bg;
+    color: $color_white;
+    margin-bottom: -1em;
+    font-weight: bold;
+    &__logo {
+      width: 8em;
+      padding-left: 1em;
+      padding-top: 1em;
+      filter: invert(100%); 
+      -webkit-filter:invert(100%); 
+    }
+    &__liste {
+      list-style-type: none;
+      padding-left: 20px;
+      padding-bottom: 1em;
+      > li > i {
+        font-size: 0.8rem;
+      }
+    }
+}
