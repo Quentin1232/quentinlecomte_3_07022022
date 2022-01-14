@@ -1,0 +1,12 @@
+@keyframes check{
+    from {
+        transform-origin: 100%;
+        transform: scaleX(1);
+        opacity: 0;
+    }
+    to {
+        // margin-right: -3em;
+        transform: scaleX(0);
+        opacity: 1;    
+    }    
+}
