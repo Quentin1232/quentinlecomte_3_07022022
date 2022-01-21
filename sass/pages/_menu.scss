@@ -84,6 +84,16 @@ h3 {
             height: 5em;
             margin-bottom: 1em;
             padding-left: 00.5em;
+
+            &:hover &__check{
+                margin-right: 0em;
+                transition: 700ms ease-in-out;
+            }
+
+            &:hover .fas {
+                animation: spin 1s;
+            }
+
             h6 {
                 font-size: 1.2em;
                 width: auto;
@@ -110,11 +120,7 @@ h3 {
                 justify-content: center;
                 font-size: 2em;
                 margin-left: 0.3em;
-
-                //animation :
-                :hover {
-                    animation: check 700ms;
-                }
+                margin-right: -3em;                
             }
             div:first-child {
                 flex-grow: 1;
