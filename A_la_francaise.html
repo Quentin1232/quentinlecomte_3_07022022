@@ -11,22 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
   <title>A_la_francaise</title>
-
-  <!-- <script type="text/javascript">
-      console.log('test');
-      var docWidth = document.documentElement.offsetWidth;
-      [].forEach.call(
-        document.querySelectorAll('*'),
-        function(e) {
-          if (e.offsetWidth > docWidth) {
-            console.log(e);
-          }
-        }
-      )
-    </script> -->
 </head>
 
 <body>
+  <div id="loading">
+    <i class="far fa-compass"></i>
+  </div>
   <header id="header">
     <div id="header__logo-fleche">
       <a href="index.html" id="header__logo-fleche__fleche">
@@ -57,35 +47,37 @@
   <main class="main">
     <div class="main__menu">
       <h2><b class="underline">ENTR</b>EES</h2>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--1">
         <div>
           <h6>Tartare de poulpe acidulé</h6>
-          <p class="main__menu__plat__p">
-            Aux zests d'orange
+          <div class="main__menu__plat__p">
+            <span>Aux zests d'orange</span>
             <span class="main__menu__plat__p__prix">25€</span>
-          </p>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--2">
         <div>
           <h6>Velouté de légumes d'antan</h6>
-          <p class="main__menu__plat__p">
-            Carotte, panais, topinambour<span class="main__menu__plat__p__prix">35€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Carotte, panais, topinambour</span>
+            <span class="main__menu__plat__p__prix">35€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--3">
         <div>
           <h6>Soupe à l'oignon</h6>
-          <p class="main__menu__plat__p">
-            Revisitée<span class="main__menu__plat__p__prix">20€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Revisitée</span>
+            <span class="main__menu__plat__p__prix">20€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
@@ -95,34 +87,37 @@
     <br />
     <div class="main__menu">
       <h2><b class="underline">PLAT</b>S</h2>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--1">
         <div>
           <h6>Coquilles Saint-Jacques</h6>
-          <p class="main__menu__plat__p">
-            Accompagnées d'une purée de panais<span class="main__menu__plat__p__prix">40€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Accompagnées d'une purée de panais</span>
+            <span class="main__menu__plat__p__prix">40€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--2">
         <div>
           <h6>Magret de canard</h6>
-          <p class="main__menu__plat__p">
-            Et parmentier de pommes de terres<span class="main__menu__plat__p__prix">35€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Et parmentier de pommes de terres</span>
+            <span class="main__menu__plat__p__prix">35€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--3">
         <div>
           <h6>Pigeonneau d'Ille-et-Vilaine</h6>
-          <p class="main__menu__plat__p">
-            Sur son lit de gnocchis aux légumes<span class="main__menu__plat__p__prix">44€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Sur son lit de gnocchis aux légumes</span>
+            <span class="main__menu__plat__p__prix">44€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
@@ -132,34 +127,37 @@
     <br />
     <div class="main__menu">
       <h2><b class="underline">DESS</b>ERTS</h2>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--1">
         <div>
           <h6>Pétales de violettes glacés</h6>
-          <p class="main__menu__plat__p">
-            Et purée de noisettes<span class="main__menu__plat__p__prix">18€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Et purée de noisettes</span> 
+            <span class="main__menu__plat__p__prix">18€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--2">
         <div>
           <h6>Fondant au chocolat</h6>
-          <p class="main__menu__plat__p">
-            Revisité<span class="main__menu__plat__p__prix">22€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span> Revisité</span>
+            <span class="main__menu__plat__p__prix">22€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--3">
         <div>
           <h6>Millefeuille croustillant</h6>
-          <p class="main__menu__plat__p">
-            Myrtilles et pâte d'amande<span class="main__menu__plat__p__prix">23€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>et pâte d'amande</span>
+            <span class="main__menu__plat__p__prix">23€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
@@ -167,14 +165,18 @@
       </div>
     </div>
     <div class="main__button">
-      <input type="button" value="Commander" />
+      <button class="button">Commander</button>
     </div>
   </main>
-  <footer id="footer">
-    <img id="footer__logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo2" />
-    <ul id="footer__liste">
-      <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
-      <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
+  <footer class="footer">
+    <img
+      class="footer__logo"
+      src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png"
+      alt="logo2"
+    />
+    <ul class="footer__liste">
+      <li class="footer__liste__avec_image"><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+      <li class="footer__liste__avec_image"><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
       <li>Mentions légales</li>
       <li><a href="mailto:adresse@serveur.com" class="mail">Contact</a></li>
     </ul>

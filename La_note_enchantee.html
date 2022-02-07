@@ -11,22 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
   <title>La_note_enchantée</title>
-
-  <!-- <script type="text/javascript">
-      console.log('test');
-      var docWidth = document.documentElement.offsetWidth;
-      [].forEach.call(
-        document.querySelectorAll('*'),
-        function(e) {
-          if (e.offsetWidth > docWidth) {
-            console.log(e);
-          }
-        }
-      )
-    </script> -->
 </head>
 
+
 <body>
+  <div id="loading">
+    <i class="far fa-compass"></i>
+  </div>
   <header id="header">
     <div id="header__logo-fleche">
       <a href="index.html" id="header__logo-fleche__fleche">
@@ -57,46 +48,49 @@
   <main class="main">
     <div class="main__menu">
       <h2><b class="underline">ENTR</b>EES</h2>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--1">
         <div>
           <h6>Ravioles de foie gras</h6>
-          <p class="main__menu__plat__p">
-            Accompagnés de leur crème à la truffe
+          <div class="main__menu__plat__p">
+            <span>Accompagnés de leur crème à la truffe</span>
             <span class="main__menu__plat__p__prix">25€</span>
-          </p>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--2">
         <div>
           <h6>Caviar osciètre</h6>
-          <p class="main__menu__plat__p">
-            Sur blini à la farine de blé noir<span class="main__menu__plat__p__prix">35€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Sur blini à la farine de blé noir</span>
+            <span class="main__menu__plat__p__prix">35€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--3">
         <div>
           <h6>Homard et espuma de...</h6>
-          <p class="main__menu__plat__p">
-            Mariné aux zestes d'orange<span class="main__menu__plat__p__prix">20€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Mariné aux zestes d'orange</span>
+            <span class="main__menu__plat__p__prix">20€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--4">
         <div>
           <h6>Foie gras de canard cuit entier</h6>
-          <p class="main__menu__plat__p">
-            Confiture de figue et pain toasté<span class="main__menu__plat__p__prix">35€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Confiture de figue et pain toasté</span>
+            <span class="main__menu__plat__p__prix">35€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
@@ -106,34 +100,37 @@
     <br />
     <div class="main__menu">
       <h2><b class="underline">PLAT</b>S</h2>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--1">
         <div>
           <h6>Noix de coquilles Saint-Jacques</h6>
-          <p class="main__menu__plat__p">
-            Sur lit de purée de céleri-rave<span class="main__menu__plat__p__prix">40€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Sur lit de purée de céleri-rave</span>
+            <span class="main__menu__plat__p__prix">40€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--2">
         <div>
           <h6>Langoustine poêlée</h6>
-          <p class="main__menu__plat__p">
-            Purée de patate douce<span class="main__menu__plat__p__prix">35€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Purée de patate douce</span>
+            <span class="main__menu__plat__p__prix">35€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--3">
         <div>
           <h6>Mijoté de queue de boeuf</h6>
-          <p class="main__menu__plat__p">
-            Et riz sauvage aux zests de citron<span class="main__menu__plat__p__prix">44€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Et riz sauvage aux zests de citron</span>
+            <span class="main__menu__plat__p__prix">44€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
@@ -143,34 +140,37 @@
     <br />
     <div class="main__menu">
       <h2><b class="underline">DESS</b>ERTS</h2>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--1">
         <div>
           <h6>Macaron noisette et chocolat</h6>
-          <p class="main__menu__plat__p">
-            Glace au caramel brun et sel de Guérande<span class="main__menu__plat__p__prix">18€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Glace au caramel brun et sel de Guérande<span>
+              <span class="main__menu__plat__p__prix">18€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--2">
         <div>
           <h6>Baba au rhum revisité</h6>
-          <p class="main__menu__plat__p">
-            Avec son coulis de citron<span class="main__menu__plat__p__prix">22€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Avec son coulis de citron</span>
+            <span class="main__menu__plat__p__prix">22€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
         </div>
       </div>
-      <div class="main__menu__plat">
+      <div class="main__menu__plat main__menu__plat--3">
         <div>
           <h6>Tarte au citron meringuée</h6>
-          <p class="main__menu__plat__p">
-            Destructurée<span class="main__menu__plat__p__prix">23€</span>
-          </p>
+          <div class="main__menu__plat__p">
+            <span>Destructurée</span>
+            <span class="main__menu__plat__p__prix">23€</span>
+          </div>
         </div>
         <div class="main__menu__plat__check">
           <i class="fas fa-check-circle"></i>
@@ -178,14 +178,19 @@
       </div>
     </div>
     <div class="main__button">
-      <input type="button" value="Commander" />
+      <button class="button">Commander</button>
     </div>
   </main>
-  <footer id="footer">
-    <img id="footer__logo" src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo2" />
-    <ul id="footer__liste">
-      <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
-      <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
+  
+  <footer class="footer">
+    <img
+      class="footer__logo"
+      src="Maquettes Ohmyfood/Maquettes Ohmyfood/images/logo/ohmyfood.png"
+      alt="logo2"
+    />
+    <ul class="footer__liste">
+      <li class="footer__liste__avec_image"><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+      <li class="footer__liste__avec_image"><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
       <li>Mentions légales</li>
       <li><a href="mailto:adresse@serveur.com" class="mail">Contact</a></li>
     </ul>

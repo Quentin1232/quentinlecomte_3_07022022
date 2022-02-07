@@ -25,8 +25,9 @@
       }
     }
     &__form {
+      background-color: rgb(245, 245, 245);
       @include center;
-      padding: 1em 1.5em;
+      padding: 1em 1.5em 2em 1.5em;
       & > * {
         text-align: center;
       }

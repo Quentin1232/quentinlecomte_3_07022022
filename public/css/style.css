@@ -1,6 +1,29 @@
 @keyframes spin {
-  from {
-    rotate: 2turn;
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-720deg);
+  }
+}
+@keyframes animation-plat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+    z-index: 5;
+  }
+  100% {
+    z-index: -5;
+    opacity: 0;
   }
 }
 #header__logo {
@@ -33,12 +56,13 @@
   font-weight: bold;
 }
 #header__form {
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 1em 1.5em;
+  padding: 1em 1.5em 2em 1.5em;
 }
 #header__form > * {
   text-align: center;
@@ -167,12 +191,33 @@ h3 {
   margin-block-end: 0.5em;
 }
 
+#loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  display: flex;
+  font-size: 4em;
+  color: #9356DC;
+  align-items: center;
+  justify-content: center;
+  animation: load 0s 2s;
+  animation-fill-mode: both;
+}
+#loading > i {
+  animation: spin 2.5s reverse linear infinite;
+}
+
 #header {
   width: 100%;
 }
 #header__logo-fleche {
   display: flex;
   width: auto;
+  justify-content: space-between;
   flex-direction: row;
   padding: 1em 1em;
 }
@@ -184,9 +229,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 #header__logo-fleche__logo > img {
-  width: 60%;
+  width: 15em;
 }
 #header__image {
   width: 100%;
@@ -205,10 +251,13 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1em;
-  width: 92.5%;
+  width: 100%;
+}
+#header__nom-coeur__nom {
+  padding-left: 0.5em;
 }
 #header__nom-coeur__heart {
+  padding-right: 0.5em;
   font-size: 2em;
 }
 #header__nom-coeur__heart:hover #header__nom-coeur__heart__heart-checked {
@@ -233,6 +282,7 @@ h3 {
   padding: 0.5em;
 }
 .main__menu__plat {
+  overflow: hidden;
   display: flex;
   align-items: center;
   box-shadow: 0 10px 20px #cccccc;
@@ -243,6 +293,8 @@ h3 {
   height: 5em;
   margin-bottom: 1em;
   padding-left: 0.5em;
+  animation: animation-plat 1s ease-out;
+  animation-fill-mode: both;
 }
 .main__menu__plat:hover .main__menu__plat__check {
   margin-right: 0em;
@@ -253,12 +305,14 @@ h3 {
 }
 .main__menu__plat h6 {
   font-size: 1.2em;
-  width: auto;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .main__menu__plat__p {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-block-end: 0em;
@@ -266,20 +320,41 @@ h3 {
 .main__menu__plat__p__prix {
   font-weight: bold;
 }
+.main__menu__plat__p span:first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  flex-grow: 1;
+  overflow: hidden;
+}
 .main__menu__plat__check {
   color: white;
   background-color: #99e2d0;
-  height: 5em;
+  height: 100%;
   width: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2em;
   margin-left: 0.3em;
+  flex-shrink: 0;
   margin-right: -3em;
 }
 .main__menu__plat div:first-child {
   flex-grow: 1;
+  min-width: 70%;
+}
+.main__menu__plat--1 {
+  animation-delay: 2.25s;
+}
+.main__menu__plat--2 {
+  animation-delay: 2.5s;
+}
+.main__menu__plat--3 {
+  animation-delay: 2.75s;
+}
+.main__menu__plat--4 {
+  animation-delay: 3s;
 }
 .main__button {
   display: flex;
@@ -287,7 +362,7 @@ h3 {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.main__button > input {
+.main__button > button {
   background: linear-gradient(#ff79da, #9356DC);
   color: white;
   padding: 1em;
@@ -307,25 +382,31 @@ body {
   font-family: Roboto;
 }
 
-#footer {
+.footer {
   background-color: #3d3d3d;
   color: white;
   margin-bottom: -1em;
-  font-weight: bold;
+  padding-bottom: 0.5em;
 }
-#footer__logo {
+.footer__logo {
   width: 8em;
   padding-left: 1em;
   padding-top: 1em;
   filter: invert(100%);
   -webkit-filter: invert(100%);
 }
-#footer__liste {
+.footer__liste {
   list-style-type: none;
   padding-left: 20px;
   padding-bottom: 1em;
 }
-#footer__liste > li > i {
+.footer__liste__avec_image {
+  font-weight: bold;
+}
+.footer__liste > li {
+  padding-bottom: 0.5em;
+}
+.footer__liste > li > i {
   font-size: 0.8rem;
 }
 

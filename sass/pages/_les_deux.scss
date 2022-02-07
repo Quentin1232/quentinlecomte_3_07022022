@@ -3,11 +3,11 @@ body {
   font-family: Roboto;
 }
 
-#footer {
+.footer {
     background-color: $color_footer_bg;
     color: $color_white;
     margin-bottom: -1em;
-    font-weight: bold;
+    padding-bottom: 0.5em;
     &__logo {
       width: 8em;
       padding-left: 1em;
@@ -19,8 +19,14 @@ body {
       list-style-type: none;
       padding-left: 20px;
       padding-bottom: 1em;
-      > li > i {
-        font-size: 0.8rem;
+      &__avec_image{
+        font-weight: bold;
+      }
+      > li{
+        padding-bottom: 0.5em;
+        > i {
+          font-size: 0.8rem;
+        }
       }
     }
 }
