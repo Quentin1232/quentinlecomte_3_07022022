@@ -123,17 +123,36 @@
         &__heart {
           z-index: 10;
           font-size: 2em;
-          &:hover &:active &__heart-checked {
-            background: linear-gradient($color2, $color1);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            opacity: 1;
+          @media (max-width: 1024px) {
+            &:active &__heart-checked {
+              background: linear-gradient($color2, $color1);
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              opacity: 1;
+            }
           }
+          @media (min-width: 1024px){
+            &:hover &__heart-checked {
+              background: linear-gradient($color2, $color1);
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              opacity: 1;
+            }
+          }
+
           &__heart-normal {
             position: absolute;
-            &:hover &:active {
-              opacity: 0;
+            @media (min-width: 1024px){
+              &:hover {
+                opacity: 0;
+              }
+            }
+            @media (max-width: 1024px) {
+              &:active {
+                opacity: 0;
+              }
             }
           }
           &__heart-checked {

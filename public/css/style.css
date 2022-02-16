@@ -167,18 +167,36 @@
   z-index: 10;
   font-size: 2em;
 }
-.restaurants__liste__item__description__heart:hover .restaurants__liste__item__description__heart__heart-checked {
-  background: linear-gradient(#ff79da, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 1;
+@media (max-width: 1024px) {
+  .restaurants__liste__item__description__heart:active .restaurants__liste__item__description__heart__heart-checked {
+    background: linear-gradient(#ff79da, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants__liste__item__description__heart:hover .restaurants__liste__item__description__heart__heart-checked {
+    background: linear-gradient(#ff79da, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
 }
 .restaurants__liste__item__description__heart__heart-normal {
   position: absolute;
 }
-.restaurants__liste__item__description__heart__heart-normal:hover {
-  opacity: 0;
+@media (min-width: 1024px) {
+  .restaurants__liste__item__description__heart__heart-normal:hover {
+    opacity: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .restaurants__liste__item__description__heart__heart-normal:active {
+    opacity: 0;
+  }
 }
 .restaurants__liste__item__description__heart__heart-checked {
   opacity: 0;
@@ -260,18 +278,36 @@ h3 {
   padding-right: 0.5em;
   font-size: 2em;
 }
-#header__nom-coeur__heart:hover #header__nom-coeur__heart__heart-checked {
-  background: linear-gradient(#ff79da, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 1;
+@media (min-width: 1024px) {
+  #header__nom-coeur__heart:hover #header__nom-coeur__heart__heart-checked {
+    background: linear-gradient(#ff79da, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
+}
+@media (max-width: 1024px) {
+  #header__nom-coeur__heart:active #header__nom-coeur__heart__heart-checked {
+    background: linear-gradient(#ff79da, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
 }
 #header__nom-coeur__heart__heart-normal {
   position: absolute;
 }
-#header__nom-coeur__heart__heart-normal:hover {
-  opacity: 0;
+@media (min-width: 1024px) {
+  #header__nom-coeur__heart__heart-normal:hover {
+    opacity: 0;
+  }
+}
+@media (max-width: 1024px) {
+  #header__nom-coeur__heart__heart-normal:active {
+    opacity: 0;
+  }
 }
 #header__nom-coeur__heart__heart-checked {
   opacity: 0;
@@ -296,12 +332,27 @@ h3 {
   animation: animation-plat 1s ease-out;
   animation-fill-mode: both;
 }
-.main__menu__plat:hover .main__menu__plat__check {
-  margin-right: 0em;
-  transition: 700ms ease-in-out;
+@media (min-width: 1024px) {
+  .main__menu__plat:hover .main__menu__plat__check {
+    margin-right: 0em;
+    transition: 700ms ease-in-out;
+  }
 }
-.main__menu__plat:hover .fas {
-  animation: spin 1s;
+@media (max-width: 1024px) {
+  .main__menu__plat:active .main__menu__plat__check {
+    margin-right: 0em;
+    transition: 700ms ease-in-out;
+  }
+}
+@media (min-width: 1024px) {
+  .main__menu__plat:hover .fas {
+    animation: spin 1s;
+  }
+}
+@media (max-width: 1024px) {
+  .main__menu__plat:active .fas {
+    animation: spin 1s;
+  }
 }
 .main__menu__plat h6 {
   font-size: 1.2em;
